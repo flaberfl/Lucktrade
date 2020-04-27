@@ -1,0 +1,13 @@
+/node_modules
+**/.DS_Store
+.DS_Store
+/dist
+settings.json
+/psd
+
+src/.DS_Store
+.DS_Store
+.DS_Store
+src/.DS_Store
+.DS_Store
+.DS_Store

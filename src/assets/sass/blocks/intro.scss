@@ -1,0 +1,73 @@
+.intro {
+  padding-top: 93px;
+  padding-bottom: 410px;
+
+  background-image: url(../img/intro-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center -100px;
+
+  &__title {
+    margin: 0 auto 38px;
+
+    width: 65%;
+
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__arrow {
+    display: block;
+    position: absolute;
+
+    cursor: pointer;
+    background-color: $white;
+    border: 0;
+
+    top: 8%;
+
+    width: 80px;
+    height: 80px;
+
+    transition: opacity .1s linear;
+
+    &:hover {
+      opacity: .6;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+
+    &--prev {
+      left: -115px;
+      transform: rotate(180deg);
+      
+      @media (max-width: 1450px) {
+        left: 0;
+      }
+    
+    }
+
+    &--next {
+      right: -115px;
+    
+      @media (max-width: 1450px) {
+        right: 0;
+      }
+    }
+
+    &-icon {
+      width: 15px;
+      height: 16px;
+      fill: $black;
+    }
+  }
+}

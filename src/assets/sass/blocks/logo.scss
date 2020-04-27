@@ -1,0 +1,49 @@
+.logo {
+  font-size: 42px;
+  font-family: $header-font;
+  font-weight: 900;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition: color .1s linear;
+
+  position: relative;
+
+  &:hover {
+    color: $red;
+    
+    .logo-postfix {
+        color: $white;
+        
+    }
+  }
+
+    &-postfix {
+    color: $red;
+
+    transition: color .1s linear;
+    
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/svg/logo.svg);
+    background-repeat: no-repeat;
+
+    left: 23px;
+    top: -55%;
+
+    width: 54px;
+    height: 21px;
+  }
+
+
+  // @media (max-width: 780px) {
+  //   display: none;
+  // }
+
+
+
+}

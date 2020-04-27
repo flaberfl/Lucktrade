@@ -1,0 +1,38 @@
+@import "vars";
+@import "mixin/query-mixin.scss";
+@import "blocks/fonts";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: $white;
+
+  background-color: $black;
+}
+
+/* Blocks */
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/nav";
+@import "blocks/social";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/slider";
+@import "blocks/welcome";
+@import "blocks/quote";
+@import "blocks/news";
+@import "blocks/products";
+@import "blocks/video";
+@import "blocks/about";
+@import "blocks/footer";
+
+/* Vendor Libs */
+@import "vendor/slick";
